@@ -11,7 +11,7 @@ model = load_model('mnist_model.h5')  # 사전에 학습된 모델 로드
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index_old.html')
 
 
 @app.route('/predict', methods=['POST'])
